@@ -18,6 +18,11 @@ export class InicioPage implements OnInit {
       nome: 'Abas',
       link: '/action-sheet'
     },
+    {
+      icone: 'card-outline',
+      nome: 'Cards',
+      link: '/cards'
+    },
   ];
 
   constructor() { }
