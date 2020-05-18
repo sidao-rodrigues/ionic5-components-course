@@ -11,8 +11,13 @@ export class InicioPage implements OnInit {
     {
       icone: 'imagem',
       nome: 'Alerta',
-      link: '/alerta'
-    }
+      link: '/alert'
+    },
+    {
+      icone: 'imagem',
+      nome: 'Abas',
+      link: '/action-sheet'
+    },
   ];
 
   constructor() { }

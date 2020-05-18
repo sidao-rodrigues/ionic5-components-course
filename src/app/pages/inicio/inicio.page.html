@@ -2,8 +2,8 @@
 <ion-content>
 
   <ion-list>
-    <ion-item routerLink="/action-sheet" detail>
-      <ion-label>Awesome Label1</ion-label>
+    <ion-item *ngFor="let c of components" [routerLink]="c.link" detail>
+      <ion-label>{{ c.nome }}</ion-label>
     </ion-item>
   </ion-list>
 
