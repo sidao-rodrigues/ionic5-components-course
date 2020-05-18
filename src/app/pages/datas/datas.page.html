@@ -4,8 +4,15 @@
 
   <ion-list>
     <ion-item>
-      <ion-label>MMMM</ion-label>
-      <ion-datetime placeHolder="MMMM" displayFormat="MMMM" value="{{dataAtual}}"></ion-datetime>
+      <ion-label>Data Simples</ion-label>
+      <ion-datetime 
+        placeHolder="Data" 
+        value="{{dataAtual | date: 'yyyy-MM-dd'}}"
+        displayFormat="DD/MM/YYYY"
+        cancerlText="Cancelar"
+        [(ngModel)]="dataAtual"
+        (ionChange)="trocarData($event)"
+      ></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label>MM DD YY</ion-label>
