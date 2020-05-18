@@ -7,13 +7,25 @@
       <ion-label>Data Simples</ion-label>
       <ion-datetime 
         placeHolder="Data" 
-        value="{{dataAtual | date: 'yyyy-MM-dd'}}"
         displayFormat="DD/MM/YYYY"
         cancerlText="Cancelar"
-        [(ngModel)]="dataAtual"
+        [ngModel]="dataAtual.toISOString()"
         (ionChange)="trocarData($event)"
-      ></ion-datetime>
+      ></ion-datetime><!--[(ngModel)]="dataAtual" value="{{dataAtual | date: 'yyyy-MM-dd'}}"-->
     </ion-item>
+
+    <ion-item>
+      <ion-label>Intervalo</ion-label>
+      <ion-datetime 
+        placeHolder="Data" 
+        displayFormat="DD/MM/YYYY"
+        cancerlText="Cancelar"
+        [ngModel]="dataAtual.toISOString()"
+        min="2015-01-01"
+        max="2030-12-12"
+      ></ion-datetime><!--[(ngModel)]="dataAtual" value="{{dataAtual | date: 'yyyy-MM-dd'}}"-->
+    </ion-item>
+
     <ion-item>
       <ion-label>MM DD YY</ion-label>
       <ion-datetime displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>

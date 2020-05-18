@@ -28,6 +28,11 @@ export class InicioPage implements OnInit {
       nome: 'Datas',
       link: '/datas'
     },
+    {
+      icone: 'grid-outline',
+      nome: 'Grids',
+      link: '/grid'
+    },
   ];
 
   constructor() { }
