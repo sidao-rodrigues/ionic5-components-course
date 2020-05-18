@@ -9,12 +9,12 @@ export class InicioPage implements OnInit {
 
   public components: Componente[] = [
     {
-      icone: 'imagem',
+      icone: 'logo-google-playstore',
       nome: 'Alerta',
       link: '/alert'
     },
     {
-      icone: 'imagem',
+      icone: 'clipboard-outline',
       nome: 'Abas',
       link: '/action-sheet'
     },
