@@ -28,5 +28,15 @@
     "icone": "code-working-outline",
     "nome": "Inputs",
     "link": "/input"
+  },
+  {
+    "icone": "albums-outline",
+    "nome": "Slides",
+    "link": "/slides"
+  },
+  {
+    "icone": "barcode-outline",
+    "nome": "Toast",
+    "link": "/toast"
   }
 ]
