@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatasPage implements OnInit {
 
+  public dataAtual: Date = new Date();
+
   constructor() { }
 
   ngOnInit() {
