@@ -33,6 +33,11 @@ export class InicioPage implements OnInit {
       nome: 'Grids',
       link: '/grid'
     },
+    {
+      icone: 'code-working-outline',
+      nome: 'Inputs',
+      link: '/input'
+    },
   ];
 
   constructor() { }
