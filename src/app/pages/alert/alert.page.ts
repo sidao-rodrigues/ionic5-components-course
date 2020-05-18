@@ -8,11 +8,14 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPage implements OnInit {
 
+  public titulo: string;
+
   constructor(public alertController: AlertController) { }
 
   ngOnInit() {
   }
 
+  
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Alert',
@@ -73,7 +76,7 @@ export class AlertPage implements OnInit {
           id: 'name2-id',
           value: 'hello',
           placeholder: 'Placeholder 2'
-        },
+        },/*
         // multiline input.
         {
           name: 'paragraph',
@@ -108,7 +111,7 @@ export class AlertPage implements OnInit {
         {
           name: 'name7',
           type: 'number'
-        }
+        }*/
       ],
       buttons: [
         {
@@ -120,7 +123,8 @@ export class AlertPage implements OnInit {
           }
         }, {
           text: 'Ok',
-          handler: () => {
+          handler: (data) => {
+            this.titulo = data.name1;
             console.log('Confirm Ok');
           }
         }
