@@ -32,7 +32,7 @@ export class ActionSheetPage implements OnInit {
         }
       }, {
         text: 'Play (open modal)',
-        icon: 'arrow-dropright-circle',
+        icon: 'play-circle-outline',
         handler: () => {
           console.log('Play clicked');
         }
@@ -46,6 +46,7 @@ export class ActionSheetPage implements OnInit {
         text: 'Cancel',
         icon: 'close',
         role: 'cancel',
+        cssClass: 'vermelho',
         handler: () => {
           console.log('Cancel clicked');
         }
