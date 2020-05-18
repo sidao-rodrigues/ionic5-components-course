@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Componente } from '../interfaces/interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  public getMenu() {
+    return this.http.get<Componente[]>('/assets/data/menu.json');
+  }
 }
